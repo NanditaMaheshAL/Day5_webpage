@@ -1,0 +1,83 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 20px;
+  }
+  
+  .menu > li {
+    position: relative;
+  }
+  
+  .menu > li > a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+  }
+  
+  .menu > li > a:hover {
+    background-color: #555;
+  }
+  
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    width: 150px;
+    z-index: 1;
+  }
+  
+  .menu > li:hover .submenu {
+    display: block;
+  }
+  
+  .submenu li {
+    text-align: left;
+  }
+  
+  .submenu li a {
+    padding: 10px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .submenu li a:hover {
+    background-color: #666;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .content {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
